@@ -3,8 +3,60 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HvZUAB.LoginPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <StackLayout Grid.Row="1" HorizontalOptions="Center">
+                <Label Text="Welcome back," TextColor="Black" FontSize="22" FontAttributes="bold" WidthRequest="300"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="2" HorizontalOptions="Center">
+                <Label Text="Sign In to continue" TextColor="Black" FontSize="13" FontAttributes="bold" WidthRequest="300"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" HorizontalOptions="Center">
+                <Label Text="Email" TextColor="Black" FontSize="15" FontAttributes="Bold" WidthRequest="300"/>
+                
+                <Entry Placeholder="mashallah5praysaday@gmail.com" WidthRequest="300" HeightRequest="50"
+                       FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" MaxLength="35" Text="{Binding EmailTxt, Mode=TwoWay}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4" HorizontalOptions="Center">
+                <Label Text="Email" TextColor="Black" FontSize="15" FontAttributes="Bold" WidthRequest="300"/>
+
+                <Entry Placeholder="*******************" WidthRequest="300" HeightRequest="50"
+                       FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" MaxLength="20" IsPassword="True" Text="{Binding PasswordTxt, Mode=TwoWay}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="5" HorizontalOptions="Center" Orientation="Horizontal" WidthRequest="300">
+                <CheckBox HorizontalOptions="Start" VerticalOptions="Center" Color="Beige"/>
+                
+                <Label Text="Remember Me" TextColor="Black" VerticalOptions="Center" FontSize="13" FontAttributes="Bold"/>
+
+                <Image WidthRequest="15"/>
+
+                <Button Text="Forgot your password?" TextColor="Black" WidthRequest="150" HeightRequest="45" FontSize="11" BackgroundColor="Transparent" FontAttributes="Bold" 
+                        VerticalOptions="Start" HorizontalOptions="Start"/>
+
+            </StackLayout>
             
         </StackLayout>
+       
+            
     </ContentPage.Content>
 </ContentPage>

@@ -3,22 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HvZUAB.StartPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Inserte Nombre que no es HvZ Aqui!"
-                HeightRequest="30"
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Register"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand"
-                    Clicked="RegisterNavClicked"/>
-            <Button Text="Log In"
-                    Background="Black"
-                    TextColor="White"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand"
-                    Clicked="LogInNavClicked"/>
-        </StackLayout>
+        <Grid RowSpacing="18">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="200"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="1">
+                
+            </StackLayout>
+            
+            <StackLayout Grid.Row="2">
+                
+                <Button WidthRequest="134" HeightRequest="50"
+                        Text="Register" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" Clicked="RegisterNavClicked"/>
+
+
+                <Button WidthRequest="134" HeightRequest="50"
+                       Text="Log In" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" Clicked="LogInNavClicked"/>
+
+            </StackLayout>
+
+        </Grid>
+            
+        
+                
+
+            
     </ContentPage.Content>
 </ContentPage>

@@ -4,10 +4,11 @@
              x:Class="HvZUAB.RegisterPage">
     <ContentPage.Content VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" >
-        <Grid RowSpacing="25">
+        <Grid RowSpacing="18">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="60"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -69,7 +70,31 @@
                 </Frame>
             </StackLayout>
 
-            <StackLayout Grid.Row="6" HorizontalOptions="Center" WidthRequest="275" Orientation="Vertical" Margin="15">
+            <StackLayout Grid.Row="6" HorizontalOptions="Center" Orientation="Horizontal">
+                <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0">
+                    <Picker Title="Facultad" FontSize="16" WidthRequest="245" HeightRequest="50" HorizontalOptions="Center">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Ingenieria</x:String>
+                                <x:String>Ciencias</x:String>
+                                <x:String>Medicina</x:String>
+                                <x:String>Fti</x:String>
+                                <x:String>Derecho</x:String>
+                                <x:String>Educación</x:String>
+                                <x:String>Economia y empresa</x:String>
+                                <x:String>Biociencias</x:String>
+                                <x:String>Comunicaion</x:String>
+                                <x:String>Politicas y socio</x:String>
+                                <x:String>Filosofia y letras</x:String>
+                                <x:String>Psicologia</x:String>
+                                <x:String>Veterinaria</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Frame> 
+            </StackLayout>
+
+            <StackLayout Grid.Row="7" HorizontalOptions="Center" WidthRequest="275" Orientation="Vertical" Margin="15">
                 <Frame Padding="0,4,0,4" HasShadow="True">
                     <Button Text="Accept" HeightRequest="35" TextColor="White" BackgroundColor="Black" FontSize="12" FontAttributes="Bold"/>
                 </Frame>
