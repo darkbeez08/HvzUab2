@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HvZUAB.StartPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Inserte Nombre que no es HvZ Aqui!"
+                HeightRequest="30"
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Register"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="RegisterNavClicked"/>
+            <Button Text="Log In"
+                    Background="Black"
+                    TextColor="White"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="LogInNavClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
