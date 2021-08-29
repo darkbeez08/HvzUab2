@@ -45,13 +45,21 @@
 
             <StackLayout Grid.Row="5" HorizontalOptions="Center" Orientation="Horizontal" WidthRequest="300">
                 <CheckBox HorizontalOptions="Start" VerticalOptions="Center" Color="Beige"/>
-                
+
                 <Label Text="Remember Me" TextColor="Black" VerticalOptions="Center" FontSize="13" FontAttributes="Bold"/>
 
                 <Image WidthRequest="15"/>
 
                 <Button Text="Forgot your password?" TextColor="Black" WidthRequest="150" HeightRequest="45" FontSize="11" BackgroundColor="Transparent" FontAttributes="Bold" 
                         VerticalOptions="Start" HorizontalOptions="Start"/>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="6" HorizontalOptions="Center"  Orientation="Vertical" Margin="15">
+                <ActivityIndicator Color="Black"/>
+                <Frame Padding="0,4,0,4" HasShadow="True">
+                    <Button Text="Log In" HeightRequest="35" TextColor="Black" BackgroundColor="White" FontSize="12" FontAttributes="Bold" Command="{Binding LoginCommand}"/>
+                </Frame>
 
             </StackLayout>
             

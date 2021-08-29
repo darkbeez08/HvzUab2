@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "9aG6Y2VyVGiS/XXHGmtu1H/puXA+9jWWZgAduBK4UfVp0OnHbTEsOCftCB2uYxw5fwMD6f9fyPsK1OuBgZUBGQ==",
+  "dgSpecHash": "a1saYlO+JXFdr9/scFDctywOd3pI2DuKn4KNg30EfrVj9ydQT9S2RS7oKN5/m/zhHKSAVi7AveT0DkTl4Rsy9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\darkb\\Desktop\\HvZUAB-T\\HvZUAB\\HvZUAB\\HvZUAB.iOS\\HvZUAB.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\darkb\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
+    "C:\\Users\\darkb\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\darkb\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512",
+    "C:\\Users\\darkb\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\darkb\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\darkb\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []

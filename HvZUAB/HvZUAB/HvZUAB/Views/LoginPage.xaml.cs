@@ -15,6 +15,7 @@ namespace HvZUAB
         public LoginPage()
         {
             InitializeComponent();
+            BindingContext = new LoginViewModel();
         }
     }
 }
